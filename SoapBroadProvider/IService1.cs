@@ -19,7 +19,8 @@ namespace SoapBroadProvider
         [OperationContract]
         CompositeType GetDataUsingDataContract(CompositeType composite);
 
-        // TODO: Add your service operations here
+        [OperationContract]
+        int InsertMeasurements(int light, int temp, int potent, int analog);
     }
 
 
